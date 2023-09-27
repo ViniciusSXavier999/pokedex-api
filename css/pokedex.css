@@ -16,15 +16,7 @@ body {
    
 }
 
-/*Quando o min-width atingir o tamanho de 992 px a gente vai quebrar de um jeito diferente e eu quero que seja 992*/
-@media screen and (min-width: 992px) {
-    .content {
-      max-width: 992px;
-      height: auto;
-      margin: 1rem auto;
-      border-radius: 1rem;
-    }
-  }
+
 
 .content h1 {
     margin: 0;
@@ -37,25 +29,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
-@media screen and (min-width: 380px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr;
-    }
-  }
-
-@media screen and (min-width: 576px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-
-@media screen and (min-width: 992px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
-
 
 
 .pokemon {
@@ -108,3 +81,31 @@ body {
 }
 
 /*Media query é um conjunto de css que vai ser aplicado de acordo com o tamanho da tela*/
+
+/*Quando o min-width atingir o tamanho de 992 px a gente vai quebrar de um jeito diferente e eu quero que seja 992*/
+@media screen and (min-width: 992px) {
+    .content {
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
